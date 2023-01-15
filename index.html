@@ -11,6 +11,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<script src="Assignment 4.js" charset="utf-8"></script>
 	</head>
 	<body>
 		<nav>
@@ -22,12 +23,15 @@
 					<li><a href="">Item 3</a></li>
 					<li><a href="">Item 4</a></li>
 				</ul>
-				<i class="fa fa-bars hamburger-menu-icon"></i>
+				<button onclick="openMenu()">
+					<i class="fa fa-bars hamburger-menu-icon"></i>
+				</button>
 			</div>
 		</nav>
-
 		<div class="welcome-message-container">
-			<span class="welcome-message">Welcome Message</span>
+			<span class="welcome-message" onclick="changeText()"
+				>Welcome Message</span
+			>
 		</div>
 		<div class="content-box-section-container">
 			<span class="title">Section Title</span>
@@ -39,9 +43,30 @@
 			</div>
 		</div>
 		<div class="call-to-action-button-container">
-			<button type="button" class="call-to-action-button">
+			<button
+				type="button"
+				class="call-to-action-button"
+				onclick="actionButtonOnClick()"
+			>
 				Call to Action
 			</button>
+		</div>
+		<div class="content-box-section-container hide">
+			<div class="content-box-section">
+				<div class="content-box">Content Box 5</div>
+				<div class="content-box">Content Box 6</div>
+				<div class="content-box">Content Box 7</div>
+				<div class="content-box">Content Box 8</div>
+			</div>
+		</div>
+		<div class="sidemenu-fix-container">
+			<div class="side-menu">
+				<button class="close-menu-button" onclick="closeMenu()">X</button>
+				<a href="">Item 1</a>
+				<a href="">Item 2</a>
+				<a href="">Item 3</a>
+				<a href="">Item 4</a>
+			</div>
 		</div>
 	</body>
 </html>
